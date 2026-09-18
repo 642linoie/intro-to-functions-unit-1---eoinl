@@ -3,16 +3,12 @@ from turtle import *
 t = Turtle()
 t.shape('turtle')
 
-def addSquares(iRange):
-    length = 25
+for i in range(60):
     def square(length, angle):
         for i in range(4):
             t.forward(length)
             t.left(angle)
-    for i in range(iRange):
-        square(length, 90)
-        length += 25
-addSquares(5)
-
-
+    square(100, 90)
+    t.right(5)
+    print(i)
 turtle.done()
